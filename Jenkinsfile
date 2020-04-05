@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = sudo docker.build("akafle/nodeapp")
+        app = docker.build("akafle/nodeapp")
     }
 
     stage('Test image') {
